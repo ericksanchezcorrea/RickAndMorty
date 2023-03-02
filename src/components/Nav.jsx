@@ -1,10 +1,17 @@
 import React from 'react'
-import SearchBar from './SearchBar'
+import { Outlet} from 'react-router-dom'
+import Navbar from './Navbar'
 
-function Nav(props) {
+
+function Nav({onSearch}) {
+    
+
   return (
-    <div style={{backgroundColor:"yellow", width:"100%", display:'flex', justifyContent:'flex-end'}}>
-        <SearchBar onSearch={props.onSearch} />
+    <div >
+
+      <Navbar onSearch={onSearch} />      
+      <Outlet />
+
     </div>
   )
 }

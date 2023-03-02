@@ -1,0 +1,17 @@
+@use './scss/abstracts/variables';
+
+@use './scss/base/resets';
+@use './scss/base/base';
+
+@use './scss/abstracts/mixins';
+
+
+
+// componentes
+
+@use './scss/layout/navbar.scss';
+@use './scss/layout/searchbar.scss';
+@use './scss/components/cards';
+@use './scss/components/card';
+@use './scss/components/form';
+@use './scss/components/favorites';

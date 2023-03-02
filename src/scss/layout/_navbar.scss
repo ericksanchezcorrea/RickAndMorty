@@ -1,0 +1,19 @@
+.navbar_wrapper{
+    background-color: crimson;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+
+    .link_container{
+        display: flex;
+        gap: 30px;
+        a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+    }
+
+}

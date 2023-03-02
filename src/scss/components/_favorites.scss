@@ -1,0 +1,21 @@
+.favorites_wrapper{
+    padding: 50px;
+    h1{
+        text-align: center;
+    }
+    
+    .card_container{
+        display: flex;
+        gap:30px;
+        flex-wrap: wrap;
+        
+        .favorite_Card{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+
+
+}

@@ -1,22 +1,30 @@
 import Card from './Card';
 
-
-export default function Cards(props) {
+export default function Cards({characters, onClose}) {
    
-   const { characters } = props;
-   console.log(characters)
-
    return (
-      props.characters.map((character)=>(
-         <Card
-            key={character.id} 
-            onClose={() => window.alert('Emulamos que se cierra la card')} 
-            name={character.name} 
-            species={character.species} 
-            gender={character.gender} 
-            image={character.image}   
-         />
-      ))
 
+      <div className='cards_wrapper'>
+         
+         <h1>Personajes</h1>
+         <div className='cards_container'>
+
+            {  characters &&
+               characters.map((character)=>(
+               
+               <Card
+                  key={character.id} 
+                  id={character.id}
+                  onClose={() => onClose(character.id)} 
+                  name={character.name} 
+                  species={character.species} 
+                  gender={character.gender} 
+                  image={character.image}   
+               />
+            ))}
+
+         </div>
+
+      </div>
    );
 }

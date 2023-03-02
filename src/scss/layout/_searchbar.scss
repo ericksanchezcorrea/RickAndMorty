@@ -1,0 +1,14 @@
+.searchbar_wrapper{
+    display: flex;
+    gap: 30px;
+
+    input, button{
+        border-radius: 8px;
+        border: none;
+        padding: 5px;
+        outline: none;
+    }
+    button{
+        cursor: pointer;
+    }
+}

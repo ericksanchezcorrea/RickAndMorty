@@ -1,0 +1,9 @@
+@use '../abstracts/variables';
+
+html, body{
+    font-family: var(--font-poppins);
+}
+
+body{
+    background: var(--color-fuente);
+}

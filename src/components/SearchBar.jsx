@@ -1,17 +1,17 @@
 import React from "react";
 
-export default function SearchBar(props) {
+export default function SearchBar({onSearch}) {
 
    const [character, setCharacter] = React.useState('')
 
-   function actualizar(e){
+   function  handleInputChange(e){
       setCharacter(e.target.value)
    }
 
    return (
-      <div style={{backgroundColor:"green", width:"200px"}}>
-         <input type='search' onChange={actualizar} value={character} />
-         <button onClick= {()=> props.onSearch(character)}>Agregar</button>
+      <div className="searchbar_wrapper">
+         <input type='search' onChange={ handleInputChange} value={character} />
+         <button onClick= {()=> onSearch(character)}>Agregar</button>
       </div>
    );
 }
