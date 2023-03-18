@@ -5,6 +5,7 @@ import { _addToFavorites, _removeToFavorites } from '../redux/actions';
 
 function Card({ onClose, name, species, image, gender, id, addToFavorites, removeToFavorites, myFavorites }) {
   const [isFav, setIsFav] = useState(false);
+  // comentario
 
   useEffect(() => {
     myFavorites.forEach((fav) => {
